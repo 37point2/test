@@ -1,0 +1,20 @@
+➜  test  ./test-rm 
+Running as pid - 11964
+Removing self - ./test-rm
+Sleeping for 3600 seconds
+
+➜  test  ls
+Makefile  test-rm.c
+➜  test  cp /proc/11964/exe test-rm
+➜  test  ls -al
+total 28
+drwxrwxr-x 2 rlilly rlilly 4096 Feb  7 19:57 .
+drwxrwxr-x 5 rlilly rlilly 4096 Feb  7 19:32 ..
+-rw-rw-r-- 1 rlilly rlilly   58 Feb  7 19:37 Makefile
+-rwxrwxr-x 1 rlilly rlilly 9960 Feb  7 19:57 test-rm
+-rw-rw-r-- 1 rlilly rlilly  312 Feb  7 19:56 test-rm.c
+➜  test  ./test-rm 
+Running as pid - 12028
+Removing self - ./test-rm
+Sleeping for 3600 seconds
+^C
